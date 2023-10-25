@@ -5,11 +5,10 @@ button.addEventListener("click", userGeneratedGrid);
 
 function userGeneratedGrid() {
   let num = Number(prompt("How many squares per side do you want?"));
-  console.log(num);
   if (isNaN(num) || num === 0) {
-    console.log("Please input a number.");
+    alert("Please input a number.");
   } else if (num > 100) {
-    console.log(
+    alert(
       "The maximum number of squares per side is 100. Please choose another number."
     );
   } else {
